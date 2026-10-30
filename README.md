@@ -1,10 +1,11 @@
 # Ship or Skip
 
-A small swipe game: is there a ship at this harbour berth in 10 m Sentinel-2 imagery?
+A small swipe game: is there a ship inside the ring in 10 m Sentinel-2 imagery of the open sea?
 
-Each card blinks one satellite pass against a pass when AIS reported a ship at the same berth. Swipe right for vessel,
-left for no vessel, up for can't tell. After each answer the page shows what is known about that berth: a ship AIS
-reported, an empty berth, or a spot where a ship detector fired although AIS showed nothing.
+Tap a card to flip between the pass and the usual view of the same spot (other passes with no ship nearby), or press
+Blink. Swipe right for vessel, left for no vessel, up for can't tell. After each answer the page shows what is known
+about that spot: a ship AIS reported under way, empty water, or a spot where a ship detector fired although AIS showed
+nothing within 300 m.
 
 Play it at https://saulpingerman.github.io/ship-or-skip/
 
