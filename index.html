@@ -259,7 +259,7 @@ button:disabled { opacity: 0.4; cursor: default; }
     const card = el || stackEl.querySelector(".card:not(.behind)"); if (!card) return;
     busy = true; const c = cards[i];
     const out = label === "vessel" ? "translate(140%, 10%) rotate(22deg)" : label === "none" ? "translate(-140%, 10%) rotate(-22deg)" : "translate(0, -140%)";
-    const finish = () => { labels[c.id] = { label, ms: Math.round(performance.now() - shownAt) }; lsWrite(); history.push(c.id); busy = false; toast(c, label); render(); };
+    const finish = () => { labels[c.id] = { label, ms: Math.round(performance.now() - shownAt) }; lsWrite(); history.push(c.id); busy = false; render(); };
     if (!reduce) { card.style.transition = "transform .28s ease-out, opacity .28s ease-out"; card.style.transform = out; card.style.opacity = "0"; setTimeout(finish, 270); }
     else finish();
   }
